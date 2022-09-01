@@ -1,0 +1,29 @@
+4-1. Html 문법 
+
+1. HTML(Hypertext Markup Language)
+ - html은 웹페이지 만드는데 사용하는 언어
+ - 하이퍼텍스트를 작성하기 위해 개발됨
+ - 인터넷에서 웹을통해 접근되는 대부분의 웹페이지들은 html로 작성됨
+ 
+2. HTML 태그
+ - html 태그는 <>로 감싸서 표현 (꺽쇠)
+ - 속성이름에 대소문자 구분은 안하는데, 소문자 사용 권장
+ - 기본 태그 구조 
+ 	<p class="para">netflix.com</p>
+ 
+ 3. HTML기본구조
+ 	<!DOCTYPE html>
+   <html>
+     <head>
+      <title>제목</title>
+      <style type="text/css"></style>
+      <meta name=
+      <script src=""></script>
+      <base href=""/>
+      <link href="">
+     </head>
+    <body>
+    </body>
+  </html>
+  
+ 

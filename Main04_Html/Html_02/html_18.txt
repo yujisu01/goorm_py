@@ -1,0 +1,14 @@
+Q 18. html에서 <input>태그는 사용자가 데이터를 입력할 영역을 
+		지정하는 역할을 한다. 다음중 <input>안에서
+        textbox,checkbox,radio버튼등 여러가지 형태의 입력양식중
+        선택하여 지정할때 사용되는 속성은?
+        
+        
+        (1) name
+        (2) value
+        (3) type
+        (4) action
+        
+        
+        
+//정답: (3) input태그에 여러 형태를 주고싶다는뜻 그럴땐 type을 넣져

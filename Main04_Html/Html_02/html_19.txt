@@ -1,0 +1,10 @@
+Q 19. html5에서 사용자 위치정보를 알려주는 api는?
+
+	(1) publication
+    (2) geolocation
+    (3) localizatin
+    (4) weblocation
+    
+    
+    
+//정답: (2) 지리학이여 

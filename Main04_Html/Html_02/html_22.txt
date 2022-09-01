@@ -1,0 +1,10 @@
+Q 22. 다음중 문서구조화를 위해 html5에서 새로 표준화한 태그로만 짝지어진 것은?
+	// 시맨틱태그를 의미함
+    
+    (1) li,article,table
+    (2) main,meta,summary
+    (3) aside,ol,footer
+    (4) header,section,nav
+    
+    
+//정답: (4) 시맨틱태그를 고르는 문제이다. nav들어가면 킹리적갓심 해봐도됌

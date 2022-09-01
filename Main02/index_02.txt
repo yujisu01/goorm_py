@@ -1,0 +1,185 @@
+3-2. 자료구조&라이브러리
+
+1. 리스트
+ (1) 개념
+  - 배열과 같이 여러 요소들을 갖는 집합으로, 새로운 요소를 추가하거나
+  	갱신,삭제하는 일이 가능하다.
+  - 파이썬의 리스트는 동적배열로서, 자유롭게 확장할수 있는 구조를 갖는다.
+  - 리스트의 요소들은 Square bracket([])으로 둘러쌓여 컬렉션을 표현한다.
+  	(ex: [a,1,b]..)
+  - 각 요소들은 서로 다른 타입이 될수 있으며, 콤마(,)로 구분한다.
+  
+  * 파이썬 개행하지 않고 자바의 print처럼 쭉 붙여쓰려면 print(~,end='') 쓰면됨
+  
+ (2) 리스트 선언
+  list=[]
+  list=["jisu",43,168.5]
+  print(list) 		# ['jisu',43,168.5]
+  
+  print(list[1])	# 43
+  
+  list[1] = "test"
+  print(list)		# ['jisu','test',168.5]
+  print(list*3)		# ['jisu','test',168.5,'jisu','test',168.5,'jisu','test',168.5]
+  
+ (3) 리스트 슬라이스
+  list=[1,2,3,4,5,6,7,8]
+  print(list[1:3])			# [2,3]
+  print(list[:3])			# [1,2,3]
+  print(list[3:])			# [4,5,6,7,8]
+  print(list[1::2])			# [2,4,6,8] 	-- 1번인덱스부터 끝까지 2씩 증감 출력
+  
+ (4) 리스트 추가,수정,삭제
+  list=[1,2,3,4,5,6,7,8]
+  list.append(9) 			# 끝에 9 추가
+  list[2]=10				# 2번인덱스에 10으로 수정
+  del list[0] 				# 0번인덱스 삭제
+  print(list) 				# [2,10,4,5,6,7,8,9]
+  
+ (5) 리스트 병합
+  list1= [1,2,3]
+  list2= ['a','b','c']
+  tot= list1+list2
+  print(tot) 				# [1,2,3,'a','b','c']
+  
+ (6) 리스트 검색
+  list=[1,2,3,2,3,4,5,6,7,1,2,3,4]
+  print(list.index(2))		# 1		-- '2'가 몇번째 요소인지
+  print(list.count(2))		# 3		-- '2'가 들어간 갯수가 몇개인지
+  
+ (7) 리스트 메서드
+                             <보기>
+                        list=[1,2,3,2]
+    
+    ① 특정위치에 요소삽입 (insert)
+     list.insert(1,10)
+     print(list)			# [1,10,2,3,2]	-- 1번 인덱스에 10이라는 값 밀어넣음
+     
+    ② 리스트 끝에 요소삽입 (append)
+     list.append(5)
+     print(list)			# [1,10,2,3,2,5] 
+    
+    ③ 리스트 특정위치 요소삭제 (del)
+     del(list[2])
+     print(list)			# [1,10,3,2,5]	-- 2번 인덱스의 값 삭제
+     
+    ④ 리스트 특정 요소삭제 (remove)
+     list.remove(10)
+     print(list) 			# [1,3,2,5] 	-- 10 이라는 '값'삭제 (인덱스 아님)
+     
+    ⑤ 리스트 마지막 요소 출력후 삭제 (pop)
+     print(list.pop())		# 5				-- 스택구조 
+     print(list) 			# [1,3,2]
+     
+    ⑥ 리스트 요소의 개수 (len)
+     print(len(list))		# 3  			-- 현재 3개 존재하므로 [1,3,2]
+     
+    ⑦ 리스트 병합 (extend)
+     list2= ['a','b','c']
+     list.extend(list2)						-- list2를 확장시킴 
+     print(list) 			# [1,3,2,'a','b','c']
+     
+    ⑧ 리스트로 분리 (split)
+     list3= 'jisu^28^170'.split('^')			-- ^ 를 기준으로 분리해버림
+     print(list3) 			# ['jisu','28','170']
+     
+    ⑨ 정렬 (sort)
+     list=[1,3,2,4]
+     list.sort();								-- 오름차순으로 정렬 
+     print(list)			# [1,2,3,4]
+     
+    ⑩ 정렬후 복사 (sorted)
+     list2=sorted(list)							-- list에 있는거 list2로 복사
+     print(list2) 			# [1,2,3,4]
+     
+    ⑪ 리스트 역순 출력 (reverse)
+     list.reverse()
+     print(list)			# [4,3,2,1]			-- 내림차순 정렬
+     
+    ⑫ 리스트내용 모두 삭제 (clear)
+     list.clear()
+     print(list) 			# []				-- 말그대로 내용 다 삭제함
+    
+  
+2. 튜플
+ (1) 튜플 개념
+  - 리스트와 비슷하게 여러 요소들을 갖는 구조이다.
+  - 리스트와 다른점은 새로운 요소의 추가,수정,삭제가 불가능하다
+  - 튜플의 요소들은 괄호를 사용한다.  ( 리스트는 [], 튜플은 () )
+  
+ (2) 튜플 선언
+  tup=("jisu",28,160)
+  print(tup) 				# ('jisu',28,160)
+  
+
+3. Set
+ (1) Set 개념
+  - 중복없는 요소들로만 구성된 구조이다
+  - 순서가 없다 (ex: '일본','한국','북한'..이따구로 나온문제들 주의)
+  
+ (2) Set 선언
+  set_data = {1,2,3,1,2,3,4}
+  print(set_data) 			# set([1,2,3,4])		-- 중복 요소 제외하고 출력
+  
+ (3) Set 메서드
+                                <보기>
+                        s = {1,5,1,1,1,3,7}
+    
+     ① 포함여부 확인 (in)
+      print(2 in s) 		# False					-- 2가 안에 있니..? no..
+      print(3 in s) 		# True 					-- 3이 안에 있니..? yes..
+    
+     ② 요소추가 (add)
+      s.add(6)
+      print(s) 				# {1,3,5,6,7}			-- s 안에 1중복값 없애고, 
+      												-- 순서상관없으니 정렬하고 6 추가후 출력
+  	 ③ 여러 요소추가 (update)
+      s.update([3,4,5])
+      print(s)				# {1,3,4,5,6,7}			-- 중복요소 추가 x
+      
+     ④ 요소제거 (remove)
+      s.remove(6)
+      print(s) 				# {1,3,4,5,7}
+      s.remove(2) 			# 2 요소가 없으므로 오류발생 (2번인덱스 아님)
+      
+     ⑤ 요소복사 (copy)
+      t= s.copy()
+      print(t) 				# {1,3,4,5,7}
+      
+
+4. 딕셔너리(dict)
+ (1) 딕셔너리 개념
+  - 키(eky)-값(value) 쌍으로 되어있는 구조이다.
+  - 키값으로 값을 찾을수 있는 해시테이블 구조를 갖는다. 
+  
+ (2) 딕셔너리 선언 (key:value)
+  dict_data={"유지수":90, "박지수":35, "이지수":100}
+  print(dict_data) 				# {"유지수":90, "박지수":35, "이지수":100}
+  print(dict_data["유지수"]) 	  # 90
+  
+  dict_data["유지수"]= 88
+  print(dict_data["유지수"])	  # 88
+  
+ (3) 딕셔너리 메서드
+                             <보기>
+               dict_data={"유지수":80,"김지수":75,"박지수":90}
+  	
+    ① 키만 추출하기
+     keys= dict_data.keys();
+     print(keys) 				# ['유지수','김지수','박지수']
+     for in in keys:
+     	print(in) 
+        
+    ② 값만 추출하기
+     values= dict_data.values();
+     print(values) 				# [75,90,80]		-- 개행 안하려면(in,end='')
+     for in in values: 
+     	print(in)
+ 	
+    ③ 키가 있는지 체크하여 가져오기
+     print(dict_data.get("유지수")) # 80	
+     
+     
+     
+     
+     

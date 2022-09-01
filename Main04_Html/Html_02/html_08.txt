@@ -1,0 +1,16 @@
+Q 08. html5에서 링크의 target속성에 대한 설명으로 옳은것은?
+
+	(1) target="_blank" : 새로운 윈도우에 링크 오픈
+    (2) target="_self" : 새로운 윈도우를 blank상태로 열어 링크오픈
+    (3) target="_top" : 현재 윈도우에 링크내용이 배치되도록 링크오픈
+    (4) target="_parent" : 새로운 윈도우의 최하위계층 윈도우에 링크오픈
+    
+    
+    
+    
+// 정답: (1) Main04_Html -> Html_01 -> 
+		indexHtml01_02.txt의 86번째줄 보셈 blank는 새창에 오픈한대
+        
+        (2) _blank설명임
+        (3) _self 설명임 (현재 내 페이지에서 하도록)
+        (4) _parent는 최하위계층이 아니고 최상위임 

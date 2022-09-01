@@ -1,0 +1,13 @@
+20. 파이썬 기반의 웹 크롤링 프레임워크로 옳은것은?
+
+(1) Li-fi
+(2) Scrapy
+(3) CrawlCat
+(4) SBAS 
+
+
+
+
+
+// ---> 정답: (2) Scrapy임
+// 			Main02 - index_library_txt의 17번째줄 보셈 

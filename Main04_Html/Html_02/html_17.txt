@@ -1,0 +1,13 @@
+Q 17. html에서 select태그를 이용해서 여러목록중
+	다중선택이 가능한것은?
+
+	(1) checked
+    (2) disabled
+    (3) onchange
+    (4) multiple
+    
+    
+    
+//정답: (4) 안봐도 멀티플이다 
+// 		checked는 기본적으로 체크된상태로 있는거
+// 		onchange는 자바스크립트에서 수행, 넥사에서도 썼는디

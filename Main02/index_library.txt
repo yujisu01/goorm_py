@@ -1,0 +1,23 @@
+-- 걍 이런게 있다고 정도만 알아두셈
+
+
+1. 머신러닝 라이브러리 
+	- 넘파이 (Numpy)  		  -- c언어 베이스로 만든 수치해석 관련 라이브러리
+    - 텐서플로 (Tensorflow)  -- 구글에서 만듬
+    - 파이토치 (PyTorch)	 -- 페북에서 만듬
+    - 판다스 (Pandas)
+    - Matplotlib
+    - 사이파이 (Scipy)
+    - 케라스 (Keras)
+    - 티아노 (Theano)
+    
+2. 크롤링 라이브러리 
+    - Beautifulsoup
+    - Selenium
+    - Scrapy
+    
+3. 웹 프레임워크 (홈페이지 만들수 있는 프레임워크)
+    - 큐빅웹 (CubicWeb)
+    - 장고 (Django)		-- 젤유명
+    - 웹투파이 (Web2py)
+    
